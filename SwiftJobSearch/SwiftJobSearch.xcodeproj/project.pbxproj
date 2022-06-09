@@ -7,66 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9FC287C1285275EC00276F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287C0285275EC00276F45 /* AppDelegate.swift */; };
-		9FC287C3285275EC00276F45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287C2285275EC00276F45 /* SceneDelegate.swift */; };
-		9FC287C5285275EC00276F45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287C4285275EC00276F45 /* ViewController.swift */; };
-		9FC287C8285275EC00276F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC287C6285275EC00276F45 /* Main.storyboard */; };
-		9FC287CA285275EE00276F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC287C9285275EE00276F45 /* Assets.xcassets */; };
-		9FC287CD285275EE00276F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC287CB285275EE00276F45 /* LaunchScreen.storyboard */; };
-		9FC287D8285275EE00276F45 /* SwiftJobSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287D7285275EE00276F45 /* SwiftJobSearchTests.swift */; };
-		9FC287E2285275EF00276F45 /* SwiftJobSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287E1285275EF00276F45 /* SwiftJobSearchUITests.swift */; };
-		9FC287E4285275EF00276F45 /* SwiftJobSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287E3285275EF00276F45 /* SwiftJobSearchUITestsLaunchTests.swift */; };
+		9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2877028513F1200276F45 /* AppDelegate.swift */; };
+		9FC2877328513F1200276F45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2877228513F1200276F45 /* SceneDelegate.swift */; };
+		9FC2877528513F1200276F45 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2877428513F1200276F45 /* RootViewController.swift */; };
+		9FC2877A28513F1400276F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC2877928513F1400276F45 /* Assets.xcassets */; };
+		9FC2877D28513F1400276F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC2877B28513F1400276F45 /* LaunchScreen.storyboard */; };
+		9FC2878828513F1500276F45 /* SwiftJobSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2878728513F1500276F45 /* SwiftJobSearchTests.swift */; };
+		9FC2879228513F1500276F45 /* SwiftJobSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2879128513F1500276F45 /* SwiftJobSearchUITests.swift */; };
+		9FC2879428513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2879328513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift */; };
+		9FC287A2285260F100276F45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FC287A1285260F100276F45 /* SnapKit */; };
+		9FC287A42852695800276F45 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287A32852695800276F45 /* SecondViewController.swift */; };
+		9FC287A728526A2100276F45 /* InteractionResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287A628526A2100276F45 /* InteractionResponder.swift */; };
+		9FC287AA28526E3900276F45 /* UIViewController+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287A928526E3900276F45 /* UIViewController+Instantiate.swift */; };
+		9FC287AC28526F8100276F45 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287AB28526F8100276F45 /* ViewContainer.swift */; };
+		9FC287AF2852731F00276F45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FC287B12852731F00276F45 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9FC287D4285275EE00276F45 /* PBXContainerItemProxy */ = {
+		9FC2878428513F1500276F45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9FC287B5285275EC00276F45 /* Project object */;
+			containerPortal = 9FC2876528513F1200276F45 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9FC287BC285275EC00276F45;
+			remoteGlobalIDString = 9FC2876C28513F1200276F45;
 			remoteInfo = SwiftJobSearch;
 		};
-		9FC287DE285275EE00276F45 /* PBXContainerItemProxy */ = {
+		9FC2878E28513F1500276F45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9FC287B5285275EC00276F45 /* Project object */;
+			containerPortal = 9FC2876528513F1200276F45 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9FC287BC285275EC00276F45;
+			remoteGlobalIDString = 9FC2876C28513F1200276F45;
 			remoteInfo = SwiftJobSearch;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9FC287BD285275EC00276F45 /* SwiftJobSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftJobSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FC287C0285275EC00276F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FC287C2285275EC00276F45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FC287C4285275EC00276F45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9FC287C7285275EC00276F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9FC287C9285275EE00276F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9FC287CC285275EE00276F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9FC287CE285275EE00276F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FC287D3285275EE00276F45 /* SwiftJobSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJobSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FC287D7285275EE00276F45 /* SwiftJobSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchTests.swift; sourceTree = "<group>"; };
-		9FC287DD285275EE00276F45 /* SwiftJobSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJobSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FC287E1285275EF00276F45 /* SwiftJobSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchUITests.swift; sourceTree = "<group>"; };
-		9FC287E3285275EF00276F45 /* SwiftJobSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FC2876D28513F1200276F45 /* SwiftJobSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftJobSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC2877028513F1200276F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FC2877228513F1200276F45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FC2877428513F1200276F45 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9FC2877928513F1400276F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FC2877C28513F1400276F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FC2877E28513F1400276F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC2878328513F1500276F45 /* SwiftJobSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJobSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC2878728513F1500276F45 /* SwiftJobSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchTests.swift; sourceTree = "<group>"; };
+		9FC2878D28513F1500276F45 /* SwiftJobSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJobSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC2879128513F1500276F45 /* SwiftJobSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchUITests.swift; sourceTree = "<group>"; };
+		9FC2879328513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FC287A32852695800276F45 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9FC287A628526A2100276F45 /* InteractionResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionResponder.swift; sourceTree = "<group>"; };
+		9FC287A928526E3900276F45 /* UIViewController+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiate.swift"; sourceTree = "<group>"; };
+		9FC287AB28526F8100276F45 /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
+		9FC287B02852731F00276F45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9FC287B22852733300276F45 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9FC287B32852733300276F45 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9FC287BA285275EC00276F45 /* Frameworks */ = {
+		9FC2876A28513F1200276F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FC287A2285260F100276F45 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC2878028513F1500276F45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FC287D0285275EE00276F45 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FC287DA285275EE00276F45 /* Frameworks */ = {
+		9FC2878A28513F1500276F45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,175 +88,202 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9FC287B4285275EC00276F45 = {
+		9FC2876428513F1200276F45 = {
 			isa = PBXGroup;
 			children = (
-				9FC287BF285275EC00276F45 /* SwiftJobSearch */,
-				9FC287D6285275EE00276F45 /* SwiftJobSearchTests */,
-				9FC287E0285275EE00276F45 /* SwiftJobSearchUITests */,
-				9FC287BE285275EC00276F45 /* Products */,
+				9FC2876F28513F1200276F45 /* SwiftJobSearch */,
+				9FC2878628513F1500276F45 /* SwiftJobSearchTests */,
+				9FC2879028513F1500276F45 /* SwiftJobSearchUITests */,
+				9FC2876E28513F1200276F45 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9FC287BE285275EC00276F45 /* Products */ = {
+		9FC2876E28513F1200276F45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FC287BD285275EC00276F45 /* SwiftJobSearch.app */,
-				9FC287D3285275EE00276F45 /* SwiftJobSearchTests.xctest */,
-				9FC287DD285275EE00276F45 /* SwiftJobSearchUITests.xctest */,
+				9FC2876D28513F1200276F45 /* SwiftJobSearch.app */,
+				9FC2878328513F1500276F45 /* SwiftJobSearchTests.xctest */,
+				9FC2878D28513F1500276F45 /* SwiftJobSearchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9FC287BF285275EC00276F45 /* SwiftJobSearch */ = {
+		9FC2876F28513F1200276F45 /* SwiftJobSearch */ = {
 			isa = PBXGroup;
 			children = (
-				9FC287C0285275EC00276F45 /* AppDelegate.swift */,
-				9FC287C2285275EC00276F45 /* SceneDelegate.swift */,
-				9FC287C4285275EC00276F45 /* ViewController.swift */,
-				9FC287C6285275EC00276F45 /* Main.storyboard */,
-				9FC287C9285275EE00276F45 /* Assets.xcassets */,
-				9FC287CB285275EE00276F45 /* LaunchScreen.storyboard */,
-				9FC287CE285275EE00276F45 /* Info.plist */,
+				9FC287A828526E2100276F45 /* Extensions */,
+				9FC287A528526A0B00276F45 /* Protocols */,
+				9FC2877028513F1200276F45 /* AppDelegate.swift */,
+				9FC2877228513F1200276F45 /* SceneDelegate.swift */,
+				9FC2877428513F1200276F45 /* RootViewController.swift */,
+				9FC2877928513F1400276F45 /* Assets.xcassets */,
+				9FC2877B28513F1400276F45 /* LaunchScreen.storyboard */,
+				9FC2877E28513F1400276F45 /* Info.plist */,
+				9FC287A32852695800276F45 /* SecondViewController.swift */,
+				9FC287B12852731F00276F45 /* Localizable.strings */,
 			);
 			path = SwiftJobSearch;
 			sourceTree = "<group>";
 		};
-		9FC287D6285275EE00276F45 /* SwiftJobSearchTests */ = {
+		9FC2878628513F1500276F45 /* SwiftJobSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FC287D7285275EE00276F45 /* SwiftJobSearchTests.swift */,
+				9FC2878728513F1500276F45 /* SwiftJobSearchTests.swift */,
 			);
 			path = SwiftJobSearchTests;
 			sourceTree = "<group>";
 		};
-		9FC287E0285275EE00276F45 /* SwiftJobSearchUITests */ = {
+		9FC2879028513F1500276F45 /* SwiftJobSearchUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9FC287E1285275EF00276F45 /* SwiftJobSearchUITests.swift */,
-				9FC287E3285275EF00276F45 /* SwiftJobSearchUITestsLaunchTests.swift */,
+				9FC2879128513F1500276F45 /* SwiftJobSearchUITests.swift */,
+				9FC2879328513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift */,
 			);
 			path = SwiftJobSearchUITests;
+			sourceTree = "<group>";
+		};
+		9FC287A528526A0B00276F45 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9FC287A628526A2100276F45 /* InteractionResponder.swift */,
+				9FC287AB28526F8100276F45 /* ViewContainer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9FC287A828526E2100276F45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FC287A928526E3900276F45 /* UIViewController+Instantiate.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9FC287BC285275EC00276F45 /* SwiftJobSearch */ = {
+		9FC2876C28513F1200276F45 /* SwiftJobSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FC287E7285275EF00276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearch" */;
+			buildConfigurationList = 9FC2879728513F1500276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearch" */;
 			buildPhases = (
-				9FC287B9285275EC00276F45 /* Sources */,
-				9FC287BA285275EC00276F45 /* Frameworks */,
-				9FC287BB285275EC00276F45 /* Resources */,
+				9FC2876928513F1200276F45 /* Sources */,
+				9FC2876A28513F1200276F45 /* Frameworks */,
+				9FC2876B28513F1200276F45 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftJobSearch;
+			packageProductDependencies = (
+				9FC287A1285260F100276F45 /* SnapKit */,
+			);
 			productName = SwiftJobSearch;
-			productReference = 9FC287BD285275EC00276F45 /* SwiftJobSearch.app */;
+			productReference = 9FC2876D28513F1200276F45 /* SwiftJobSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9FC287D2285275EE00276F45 /* SwiftJobSearchTests */ = {
+		9FC2878228513F1500276F45 /* SwiftJobSearchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FC287EA285275EF00276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearchTests" */;
+			buildConfigurationList = 9FC2879A28513F1500276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearchTests" */;
 			buildPhases = (
-				9FC287CF285275EE00276F45 /* Sources */,
-				9FC287D0285275EE00276F45 /* Frameworks */,
-				9FC287D1285275EE00276F45 /* Resources */,
+				9FC2877F28513F1500276F45 /* Sources */,
+				9FC2878028513F1500276F45 /* Frameworks */,
+				9FC2878128513F1500276F45 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9FC287D5285275EE00276F45 /* PBXTargetDependency */,
+				9FC2878528513F1500276F45 /* PBXTargetDependency */,
 			);
 			name = SwiftJobSearchTests;
 			productName = SwiftJobSearchTests;
-			productReference = 9FC287D3285275EE00276F45 /* SwiftJobSearchTests.xctest */;
+			productReference = 9FC2878328513F1500276F45 /* SwiftJobSearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9FC287DC285275EE00276F45 /* SwiftJobSearchUITests */ = {
+		9FC2878C28513F1500276F45 /* SwiftJobSearchUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FC287ED285275EF00276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearchUITests" */;
+			buildConfigurationList = 9FC2879D28513F1500276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearchUITests" */;
 			buildPhases = (
-				9FC287D9285275EE00276F45 /* Sources */,
-				9FC287DA285275EE00276F45 /* Frameworks */,
-				9FC287DB285275EE00276F45 /* Resources */,
+				9FC2878928513F1500276F45 /* Sources */,
+				9FC2878A28513F1500276F45 /* Frameworks */,
+				9FC2878B28513F1500276F45 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9FC287DF285275EE00276F45 /* PBXTargetDependency */,
+				9FC2878F28513F1500276F45 /* PBXTargetDependency */,
 			);
 			name = SwiftJobSearchUITests;
 			productName = SwiftJobSearchUITests;
-			productReference = 9FC287DD285275EE00276F45 /* SwiftJobSearchUITests.xctest */;
+			productReference = 9FC2878D28513F1500276F45 /* SwiftJobSearchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9FC287B5285275EC00276F45 /* Project object */ = {
+		9FC2876528513F1200276F45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					9FC287BC285275EC00276F45 = {
+					9FC2876C28513F1200276F45 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
-					9FC287D2285275EE00276F45 = {
+					9FC2878228513F1500276F45 = {
 						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = 9FC287BC285275EC00276F45;
+						TestTargetID = 9FC2876C28513F1200276F45;
 					};
-					9FC287DC285275EE00276F45 = {
+					9FC2878C28513F1500276F45 = {
 						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = 9FC287BC285275EC00276F45;
+						TestTargetID = 9FC2876C28513F1200276F45;
 					};
 				};
 			};
-			buildConfigurationList = 9FC287B8285275EC00276F45 /* Build configuration list for PBXProject "SwiftJobSearch" */;
+			buildConfigurationList = 9FC2876828513F1200276F45 /* Build configuration list for PBXProject "SwiftJobSearch" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
-			mainGroup = 9FC287B4285275EC00276F45;
-			productRefGroup = 9FC287BE285275EC00276F45 /* Products */;
+			mainGroup = 9FC2876428513F1200276F45;
+			packageReferences = (
+				9FC287A0285260F100276F45 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 9FC2876E28513F1200276F45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FC287BC285275EC00276F45 /* SwiftJobSearch */,
-				9FC287D2285275EE00276F45 /* SwiftJobSearchTests */,
-				9FC287DC285275EE00276F45 /* SwiftJobSearchUITests */,
+				9FC2876C28513F1200276F45 /* SwiftJobSearch */,
+				9FC2878228513F1500276F45 /* SwiftJobSearchTests */,
+				9FC2878C28513F1500276F45 /* SwiftJobSearchUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9FC287BB285275EC00276F45 /* Resources */ = {
+		9FC2876B28513F1200276F45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC287CD285275EE00276F45 /* LaunchScreen.storyboard in Resources */,
-				9FC287CA285275EE00276F45 /* Assets.xcassets in Resources */,
-				9FC287C8285275EC00276F45 /* Main.storyboard in Resources */,
+				9FC2877D28513F1400276F45 /* LaunchScreen.storyboard in Resources */,
+				9FC287AF2852731F00276F45 /* Localizable.strings in Resources */,
+				9FC2877A28513F1400276F45 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FC287D1285275EE00276F45 /* Resources */ = {
+		9FC2878128513F1500276F45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FC287DB285275EE00276F45 /* Resources */ = {
+		9FC2878B28513F1500276F45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,72 +293,79 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9FC287B9285275EC00276F45 /* Sources */ = {
+		9FC2876928513F1200276F45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC287C5285275EC00276F45 /* ViewController.swift in Sources */,
-				9FC287C1285275EC00276F45 /* AppDelegate.swift in Sources */,
-				9FC287C3285275EC00276F45 /* SceneDelegate.swift in Sources */,
+				9FC287A42852695800276F45 /* SecondViewController.swift in Sources */,
+				9FC287AC28526F8100276F45 /* ViewContainer.swift in Sources */,
+				9FC2877528513F1200276F45 /* RootViewController.swift in Sources */,
+				9FC287A728526A2100276F45 /* InteractionResponder.swift in Sources */,
+				9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */,
+				9FC2877328513F1200276F45 /* SceneDelegate.swift in Sources */,
+				9FC287AA28526E3900276F45 /* UIViewController+Instantiate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FC287CF285275EE00276F45 /* Sources */ = {
+		9FC2877F28513F1500276F45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC287D8285275EE00276F45 /* SwiftJobSearchTests.swift in Sources */,
+				9FC2878828513F1500276F45 /* SwiftJobSearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FC287D9285275EE00276F45 /* Sources */ = {
+		9FC2878928513F1500276F45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC287E4285275EF00276F45 /* SwiftJobSearchUITestsLaunchTests.swift in Sources */,
-				9FC287E2285275EF00276F45 /* SwiftJobSearchUITests.swift in Sources */,
+				9FC2879428513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift in Sources */,
+				9FC2879228513F1500276F45 /* SwiftJobSearchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9FC287D5285275EE00276F45 /* PBXTargetDependency */ = {
+		9FC2878528513F1500276F45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FC287BC285275EC00276F45 /* SwiftJobSearch */;
-			targetProxy = 9FC287D4285275EE00276F45 /* PBXContainerItemProxy */;
+			target = 9FC2876C28513F1200276F45 /* SwiftJobSearch */;
+			targetProxy = 9FC2878428513F1500276F45 /* PBXContainerItemProxy */;
 		};
-		9FC287DF285275EE00276F45 /* PBXTargetDependency */ = {
+		9FC2878F28513F1500276F45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FC287BC285275EC00276F45 /* SwiftJobSearch */;
-			targetProxy = 9FC287DE285275EE00276F45 /* PBXContainerItemProxy */;
+			target = 9FC2876C28513F1200276F45 /* SwiftJobSearch */;
+			targetProxy = 9FC2878E28513F1500276F45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9FC287C6285275EC00276F45 /* Main.storyboard */ = {
+		9FC2877B28513F1400276F45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9FC287C7285275EC00276F45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9FC287CB285275EE00276F45 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FC287CC285275EE00276F45 /* Base */,
+				9FC2877C28513F1400276F45 /* Base */,
+				9FC287B22852733300276F45 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9FC287B12852731F00276F45 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FC287B02852731F00276F45 /* en */,
+				9FC287B32852733300276F45 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9FC287E5285275EF00276F45 /* Debug */ = {
+		9FC2879528513F1500276F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -376,10 +422,11 @@
 			};
 			name = Debug;
 		};
-		9FC287E6285275EF00276F45 /* Release */ = {
+		9FC2879628513F1500276F45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -430,7 +477,7 @@
 			};
 			name = Release;
 		};
-		9FC287E8285275EF00276F45 /* Debug */ = {
+		9FC2879828513F1500276F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -442,7 +489,6 @@
 				INFOPLIST_FILE = SwiftJobSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,7 +504,7 @@
 			};
 			name = Debug;
 		};
-		9FC287E9285275EF00276F45 /* Release */ = {
+		9FC2879928513F1500276F45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -470,7 +516,6 @@
 				INFOPLIST_FILE = SwiftJobSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,7 +531,7 @@
 			};
 			name = Release;
 		};
-		9FC287EB285275EF00276F45 /* Debug */ = {
+		9FC2879B28513F1500276F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -506,7 +551,7 @@
 			};
 			name = Debug;
 		};
-		9FC287EC285275EF00276F45 /* Release */ = {
+		9FC2879C28513F1500276F45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -526,7 +571,7 @@
 			};
 			name = Release;
 		};
-		9FC287EE285275EF00276F45 /* Debug */ = {
+		9FC2879E28513F1500276F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -544,7 +589,7 @@
 			};
 			name = Debug;
 		};
-		9FC287EF285275EF00276F45 /* Release */ = {
+		9FC2879F28513F1500276F45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -565,43 +610,62 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9FC287B8285275EC00276F45 /* Build configuration list for PBXProject "SwiftJobSearch" */ = {
+		9FC2876828513F1200276F45 /* Build configuration list for PBXProject "SwiftJobSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FC287E5285275EF00276F45 /* Debug */,
-				9FC287E6285275EF00276F45 /* Release */,
+				9FC2879528513F1500276F45 /* Debug */,
+				9FC2879628513F1500276F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FC287E7285275EF00276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearch" */ = {
+		9FC2879728513F1500276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FC287E8285275EF00276F45 /* Debug */,
-				9FC287E9285275EF00276F45 /* Release */,
+				9FC2879828513F1500276F45 /* Debug */,
+				9FC2879928513F1500276F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FC287EA285275EF00276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearchTests" */ = {
+		9FC2879A28513F1500276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FC287EB285275EF00276F45 /* Debug */,
-				9FC287EC285275EF00276F45 /* Release */,
+				9FC2879B28513F1500276F45 /* Debug */,
+				9FC2879C28513F1500276F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FC287ED285275EF00276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearchUITests" */ = {
+		9FC2879D28513F1500276F45 /* Build configuration list for PBXNativeTarget "SwiftJobSearchUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FC287EE285275EF00276F45 /* Debug */,
-				9FC287EF285275EF00276F45 /* Release */,
+				9FC2879E28513F1500276F45 /* Debug */,
+				9FC2879F28513F1500276F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FC287A0285260F100276F45 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FC287A1285260F100276F45 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FC287A0285260F100276F45 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 9FC287B5285275EC00276F45 /* Project object */;
+	rootObject = 9FC2876528513F1200276F45 /* Project object */;
 }
