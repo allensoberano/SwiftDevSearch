@@ -1,5 +1,5 @@
 //
-//  UIViewController+Instantiate.swift
+//  UIView+Instantiate.swift
 //  SwiftJobSearch
 //
 //  Created by Allen Soberano on 6/9/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIViewController {
+extension UIView {
     func instantiate(){
         if let viewContainer = self as? ViewContainer {
             viewContainer.styleView()
