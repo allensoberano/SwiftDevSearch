@@ -9,25 +9,20 @@ import UIKit
 import SnapKit
 
 class RootViewController: UIViewController {
-    //// About
-    //** Job Search
-    //** Podcasts about Code
-    //// Places we love
-    //** Dev Music
-    //** Contact
-    //// The Team
     
-    private let tableView = UITableView()
+    enum Section {
+        case main
+    }
+    
+    private var itemsCollectionView: UICollectionView! = nil
+    private var dataSource: UICollectionViewDiffableDataSource<Section, String>! = nil
     private let menuItems = ["About", "Job Search", "Podcasts", "Places We Love", "Dev Music", "Contact", "The Team"]
     private let menuIcons = ["info.circle", "magnifyingglass.circle", "music.mic", "globe.americas", "headphones", "envelope", "person.3"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         instantiate()
-        tableView.dataSource = self
-        
     }
 }
 
@@ -37,7 +32,8 @@ extension RootViewController: ViewContainer {
     }
     
     func addSubviews() {
-        addTableView()
+        addCollectionView()
+        configureDataSource()
     }
     
     private func styleNavBar(){
@@ -53,45 +49,76 @@ extension RootViewController: ViewContainer {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
+    func addCollectionView(){
+        let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: configureLayout())
+        view.addSubview(collectionView)
+        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        collectionView.backgroundColor = .systemBackground
+        collectionView.delegate = self
+        //collectionView.delegate = self
+        collectionView.register(RootViewCollectionViewCell.self, forCellWithReuseIdentifier: RootViewCollectionViewCell.reuseIdentifer)
+        itemsCollectionView = collectionView
+    }
+}
+
+extension RootViewController: CollectionViewConfiguration {
     
-    func addTableView() {
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(RootViewTableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.register(RootViewTableViewCellDouble.self, forCellReuseIdentifier: "doubleCell")
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 135
+    func configureLayout() -> UICollectionViewCompositionalLayout {
+
+        let singleItem = NSCollectionLayoutItem(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalHeight(2/4)))
         
-        tableView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
+        let doubleItem = NSCollectionLayoutItem(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(0.5),
+                heightDimension: .fractionalHeight(1.0)))
+        
+        let doubleGroup = NSCollectionLayoutGroup.horizontal(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalWidth(1/2)),
+                subitems: [doubleItem, doubleItem])
+        
+        let nestedGroup = NSCollectionLayoutGroup.vertical(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalWidth(1.0)),
+            subitems: [singleItem, doubleGroup])
+        
+        let section = NSCollectionLayoutSection(group: nestedGroup)
+    
+        return UICollectionViewCompositionalLayout(section: section)
+    }
+    
+    func configureDataSource(){
+        dataSource = UICollectionViewDiffableDataSource<Section, String>(collectionView: itemsCollectionView){
+            (collectionView, indexPath, itemName) -> UICollectionViewCell? in
+            
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RootViewCollectionViewCell.reuseIdentifer, for: indexPath) as? RootViewCollectionViewCell else {
+                fatalError("Cannot create new cell")
+            }
+            
+            cell.update(title: itemName, icon: UIImage(systemName: self.menuIcons[indexPath.row])!)
+            
+            return cell
         }
-    }
-}
-
-
-extension RootViewController: InteractionResponder {
-    func setupInteractions() {
-    }
-    
-    @objc private func buttonClicked(){
-        let secondVC = SecondViewController()
-        navigationController?.pushViewController(secondVC, animated: true)
-    }
-}
-
-extension RootViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuItems.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RootViewTableViewCell
-        cell.update(title: menuItems[indexPath.row], icon: UIImage(systemName: menuIcons[indexPath.row])!)
-        //cell.textLabel?.text = categories[indexPath.row]
-        return cell
+        var initialSnapshot = NSDiffableDataSourceSnapshot<Section, String>()
+        initialSnapshot.appendSections([.main])
+        initialSnapshot.appendItems(menuItems, toSection: .main)
+        
+        dataSource.apply(initialSnapshot, animatingDifferences: false)
     }
+    
 }
 
-
+extension RootViewController: UICollectionViewDelegate {
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
+    let detailsVC = SecondViewController()
+    navigationController?.pushViewController(detailsVC, animated: true)
+  }
+}
 

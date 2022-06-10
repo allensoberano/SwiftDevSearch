@@ -26,6 +26,8 @@
 		9FC287F7285280CC00276F45 /* UITableView+DefaultIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287F6285280CC00276F45 /* UITableView+DefaultIdentifier.swift */; };
 		9FC287F9285290E200276F45 /* RootViewTableViewCellDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287F8285290E200276F45 /* RootViewTableViewCellDouble.swift */; };
 		9FC287FB2852997F00276F45 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287FA2852997F00276F45 /* UIColor+Random.swift */; };
+		9FC2883D2853CC1800276F45 /* RootViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2883C2853CC1800276F45 /* RootViewCollectionViewCell.swift */; };
+		9FC2883F2853DC7E00276F45 /* CollectionViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2883E2853DC7E00276F45 /* CollectionViewConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		9FC287F6285280CC00276F45 /* UITableView+DefaultIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+DefaultIdentifier.swift"; sourceTree = "<group>"; };
 		9FC287F8285290E200276F45 /* RootViewTableViewCellDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTableViewCellDouble.swift; sourceTree = "<group>"; };
 		9FC287FA2852997F00276F45 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
+		9FC2883C2853CC1800276F45 /* RootViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FC2883E2853DC7E00276F45 /* CollectionViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 			children = (
 				9FC287A628526A2100276F45 /* InteractionResponder.swift */,
 				9FC287AB28526F8100276F45 /* ViewContainer.swift */,
+				9FC2883E2853DC7E00276F45 /* CollectionViewConfiguration.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			children = (
 				9FC287F228527AED00276F45 /* RootViewTableViewCell.swift */,
 				9FC287F8285290E200276F45 /* RootViewTableViewCellDouble.swift */,
+				9FC2883C2853CC1800276F45 /* RootViewCollectionViewCell.swift */,
 			);
 			path = RootViewTableViewCells;
 			sourceTree = "<group>";
@@ -332,8 +338,10 @@
 				9FC287A42852695800276F45 /* SecondViewController.swift in Sources */,
 				9FC287AC28526F8100276F45 /* ViewContainer.swift in Sources */,
 				9FC2877528513F1200276F45 /* RootViewController.swift in Sources */,
+				9FC2883D2853CC1800276F45 /* RootViewCollectionViewCell.swift in Sources */,
 				9FC287FB2852997F00276F45 /* UIColor+Random.swift in Sources */,
 				9FC287A728526A2100276F45 /* InteractionResponder.swift in Sources */,
+				9FC2883F2853DC7E00276F45 /* CollectionViewConfiguration.swift in Sources */,
 				9FC287F528527E7200276F45 /* UIView+Instantiate.swift in Sources */,
 				9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */,
 				9FC2877328513F1200276F45 /* SceneDelegate.swift in Sources */,
