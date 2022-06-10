@@ -37,9 +37,7 @@ extension RootViewController: ViewContainer {
     }
     
     func addSubviews() {
-        //addTableView()
-        setupTableView()
-        //addMyButton()
+        addTableView()
     }
     
     private func styleNavBar(){
@@ -55,20 +53,8 @@ extension RootViewController: ViewContainer {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
-    private func addTableView(){
-        view.addSubview(tableView)
-        tableView.separatorStyle = .singleLine
-        tableView.estimatedRowHeight = 135
-        tableView.contentInsetAdjustmentBehavior = .never
-        tableView.registerClassForCellReuse(RootViewTableViewCell.self)
-        tableView.showsVerticalScrollIndicator = false
-
-        tableView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-    }
     
-    func setupTableView() {
+    func addTableView() {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(RootViewTableViewCell.self, forCellReuseIdentifier: "cell")
@@ -80,7 +66,6 @@ extension RootViewController: ViewContainer {
             make.edges.equalToSuperview()
         }
     }
-
 }
 
 
