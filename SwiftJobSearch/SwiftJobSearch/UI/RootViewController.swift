@@ -8,17 +8,29 @@
 import UIKit
 import SnapKit
 
+struct RootViewModel {
+    let menuItems = ["About", "Job Search", "Podcasts", "Places We Love", "Dev Music", "Contact", "The Team"]
+    let menuIcons = ["info.circle", "magnifyingglass.circle", "music.mic", "globe.americas", "headphones", "envelope", "person.3"]
+}
+
 class RootViewController: UIViewController {
     
     enum Section {
         case main
     }
     
+    private let viewModel: RootViewModel
     private var itemsCollectionView: UICollectionView! = nil
     private var dataSource: UICollectionViewDiffableDataSource<Section, String>! = nil
-    private let menuItems = ["About", "Job Search", "Podcasts", "Places We Love", "Dev Music", "Contact", "The Team"]
-    private let menuIcons = ["info.circle", "magnifyingglass.circle", "music.mic", "globe.americas", "headphones", "envelope", "person.3"]
+
+    init() {
+        viewModel = RootViewModel()
+        super.init(nibName: nil, bundle: nil)
+    }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +51,7 @@ extension RootViewController: ViewContainer {
     private func styleNavBar(){
         navigationItem.title = "Swift Job Search"
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .purple
+        appearance.backgroundColor = .orange
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
 
@@ -100,25 +112,32 @@ extension RootViewController: CollectionViewConfiguration {
                 fatalError("Cannot create new cell")
             }
             
-            cell.update(title: itemName, icon: UIImage(systemName: self.menuIcons[indexPath.row])!)
+            cell.update(title: itemName, icon: UIImage(systemName: self.viewModel.menuIcons[indexPath.row])!)
             
             return cell
         }
         
         var initialSnapshot = NSDiffableDataSourceSnapshot<Section, String>()
         initialSnapshot.appendSections([.main])
-        initialSnapshot.appendItems(menuItems, toSection: .main)
+        initialSnapshot.appendItems(viewModel.menuItems, toSection: .main)
         
         dataSource.apply(initialSnapshot, animatingDifferences: false)
     }
-    
 }
 
 extension RootViewController: UICollectionViewDelegate {
-  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
-    let detailsVC = SecondViewController()
-    navigationController?.pushViewController(detailsVC, animated: true)
-  }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
+        let itemSelected = indexPath.row
+        
+        let vc: UIViewController!
+        switch itemSelected {
+        case 0:
+            vc = AboutViewController()
+        default:
+            vc = SecondViewController()
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

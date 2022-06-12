@@ -59,7 +59,6 @@ extension RootViewCollectionViewCell: ViewContainer {
             make.trailing.equalTo(contentView.snp.trailing).inset(5)
             make.top.equalTo(contentView.snp.top).offset(5)
             make.bottom.equalTo(contentView.snp.bottom)
-            make.height.equalTo(200)
         }
     }
 
@@ -78,13 +77,7 @@ extension RootViewCollectionViewCell: ViewContainer {
     private func addTitleView(){
         stackView.addArrangedSubview(titleLabel)
         titleLabel.textColor = .white
-        titleLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
         titleLabel.adjustsFontForContentSizeCategory = true
-    }
-}
-
-extension RootViewCollectionViewCell: InteractionResponder {
-    func setupInteractions() {
-        
     }
 }
