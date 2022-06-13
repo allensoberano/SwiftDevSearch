@@ -29,6 +29,11 @@
 		9FC2883F2853DC7E00276F45 /* CollectionViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2883E2853DC7E00276F45 /* CollectionViewConfiguration.swift */; };
 		9FC288492853F1E100276F45 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC288482853F1E100276F45 /* AboutViewController.swift */; };
 		9FC2884B285564DD00276F45 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2884A285564DD00276F45 /* AboutViewModel.swift */; };
+		9FC2884E2856B44F00276F45 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 9FC2884D2856B44F00276F45 /* Moya */; };
+		9FC288532856B81F00276F45 /* MuseJobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC288522856B81F00276F45 /* MuseJobService.swift */; };
+		9FC288562856B95E00276F45 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC288552856B95E00276F45 /* Job.swift */; };
+		9FC288592856BAD700276F45 /* MuseJobTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC288582856BAD700276F45 /* MuseJobTarget.swift */; };
+		9FC2885D2856BB8900276F45 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2885C2856BB8900276F45 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +81,10 @@
 		9FC2883E2853DC7E00276F45 /* CollectionViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewConfiguration.swift; sourceTree = "<group>"; };
 		9FC288482853F1E100276F45 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9FC2884A285564DD00276F45 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		9FC288522856B81F00276F45 /* MuseJobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseJobService.swift; sourceTree = "<group>"; };
+		9FC288552856B95E00276F45 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		9FC288582856BAD700276F45 /* MuseJobTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseJobTarget.swift; sourceTree = "<group>"; };
+		9FC2885C2856BB8900276F45 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC2884E2856B44F00276F45 /* Moya in Frameworks */,
 				9FC287A2285260F100276F45 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,12 +137,13 @@
 		9FC2876F28513F1200276F45 /* SwiftJobSearch */ = {
 			isa = PBXGroup;
 			children = (
+				9FC2885A2856BB6B00276F45 /* Source */,
+				9FC288542856B94D00276F45 /* Models */,
+				9FC2884F2856B7F200276F45 /* Services */,
 				9FC287A828526E2100276F45 /* Extensions */,
 				9FC287A528526A0B00276F45 /* Protocols */,
 				9FC287F02852793600276F45 /* UI */,
 				9FC2877E28513F1400276F45 /* Info.plist */,
-				9FC2877028513F1200276F45 /* AppDelegate.swift */,
-				9FC2877228513F1200276F45 /* SceneDelegate.swift */,
 				9FC2877928513F1400276F45 /* Assets.xcassets */,
 				9FC2877B28513F1400276F45 /* LaunchScreen.storyboard */,
 				9FC287B12852731F00276F45 /* Localizable.strings */,
@@ -199,6 +210,65 @@
 			path = RootViewTableViewCells;
 			sourceTree = "<group>";
 		};
+		9FC2884F2856B7F200276F45 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9FC288502856B7FA00276F45 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9FC288502856B7FA00276F45 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9FC288572856BABC00276F45 /* Targets */,
+				9FC288512856B80800276F45 /* Protocols */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9FC288512856B80800276F45 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9FC288522856B81F00276F45 /* MuseJobService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9FC288542856B94D00276F45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FC288552856B95E00276F45 /* Job.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FC288572856BABC00276F45 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				9FC288582856BAD700276F45 /* MuseJobTarget.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		9FC2885A2856BB6B00276F45 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2885B2856BB7D00276F45 /* Helpers */,
+				9FC2877028513F1200276F45 /* AppDelegate.swift */,
+				9FC2877228513F1200276F45 /* SceneDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9FC2885B2856BB7D00276F45 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2885C2856BB8900276F45 /* Secrets.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,6 +287,7 @@
 			name = SwiftJobSearch;
 			packageProductDependencies = (
 				9FC287A1285260F100276F45 /* SnapKit */,
+				9FC2884D2856B44F00276F45 /* Moya */,
 			);
 			productName = SwiftJobSearch;
 			productReference = 9FC2876D28513F1200276F45 /* SwiftJobSearch.app */;
@@ -293,6 +364,7 @@
 			mainGroup = 9FC2876428513F1200276F45;
 			packageReferences = (
 				9FC287A0285260F100276F45 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				9FC2884C2856B44F00276F45 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 9FC2876E28513F1200276F45 /* Products */;
 			projectDirPath = "";
@@ -337,19 +409,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC2885D2856BB8900276F45 /* Secrets.swift in Sources */,
 				9FC287F328527AED00276F45 /* RootViewTableViewCell.swift in Sources */,
 				9FC287A42852695800276F45 /* SecondViewController.swift in Sources */,
 				9FC2884B285564DD00276F45 /* AboutViewModel.swift in Sources */,
 				9FC287AC28526F8100276F45 /* ViewContainer.swift in Sources */,
 				9FC2877528513F1200276F45 /* RootViewController.swift in Sources */,
+				9FC288532856B81F00276F45 /* MuseJobService.swift in Sources */,
 				9FC2883D2853CC1800276F45 /* RootViewCollectionViewCell.swift in Sources */,
 				9FC287FB2852997F00276F45 /* UIColor+Random.swift in Sources */,
 				9FC287A728526A2100276F45 /* InteractionResponder.swift in Sources */,
 				9FC2883F2853DC7E00276F45 /* CollectionViewConfiguration.swift in Sources */,
 				9FC287F528527E7200276F45 /* UIView+Instantiate.swift in Sources */,
 				9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */,
+				9FC288592856BAD700276F45 /* MuseJobTarget.swift in Sources */,
 				9FC288492853F1E100276F45 /* AboutViewController.swift in Sources */,
 				9FC2877328513F1200276F45 /* SceneDelegate.swift in Sources */,
+				9FC288562856B95E00276F45 /* Job.swift in Sources */,
 				9FC287F7285280CC00276F45 /* UITableView+DefaultIdentifier.swift in Sources */,
 				9FC287AA28526E3900276F45 /* UIViewController+Instantiate.swift in Sources */,
 			);
@@ -705,6 +781,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		9FC2884C2856B44F00276F45 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -712,6 +796,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9FC287A0285260F100276F45 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		9FC2884D2856B44F00276F45 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FC2884C2856B44F00276F45 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
