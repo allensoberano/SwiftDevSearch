@@ -2,7 +2,7 @@
 //  Client.swift
 //  SwiftJobSearch
 //
-//  Created by Allen Soberano on 6/13/22.
+//  Created by Allen Soberano on 6/14/22.
 //
 
 import Foundation
@@ -11,33 +11,37 @@ import Moya
 final class Client {
     
     private lazy var middlewareMuseJobProvider: MoyaProvider<MuseJobTarget> = {
-        var plugins: [PluginType] = []
-
-        #if DEBUG
-        plugins.append(
-            NetworkLoggerPlugin(
-                configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose)
-            )
-        )
-        #endif
+        var plugins = verbosePlugin()
 
         return MoyaProvider<MuseJobTarget>(plugins: plugins)
     }()
     
-    func requestMuseJobs() -> [Job]{
-        var jobs: [Job] = []
-        let _ = middlewareMuseJobProvider.request(.engineeringJobs){ result in
+    func requestMuseJobs<T: Decodable>(target: MuseJobTarget, completion: @escaping (Result<T, Error>) -> ()) {        middlewareMuseJobProvider.request(.engineeringJobs){ result in
             switch result {
             case .success(let response):
                 do {
-                    jobs = try response.map([Job].self, atKeyPath: "results")
-                } catch {
-                    print("Error Encoding Jobs")
+                    if let results = try? JSONDecoder().decode(T.self, from: response.data) {
+                        completion(.success(results))
+                    }
                 }
-            case .failure(let error):
-                print(error)
+            case let .failure(error):
+                completion(.failure(error))
             }
         }
-        return jobs
+    }
+}
+
+extension Client {
+    
+    private func verbosePlugin() -> [PluginType]{
+        var plugins: [PluginType] = []
+
+        #if DEBUG
+        plugins.append(
+            NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose))
+        )
+        #endif
+
+        return plugins
     }
 }

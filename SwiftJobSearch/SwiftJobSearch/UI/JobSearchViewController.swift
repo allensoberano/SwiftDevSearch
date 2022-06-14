@@ -9,16 +9,9 @@ import Moya
 import UIKit
 import SnapKit
 
-protocol JobSearchViewModelProtocol: AnyObject {
-    func onUpdateJobs()
-}
-
-
-
 class JobSearchViewController: UIViewController {
     
     let viewModel: JobSearchViewModel
-    var jobs: [Job] = []
     let provider = MoyaProvider<MuseJobTarget>()
     let tableView = UITableView()
     

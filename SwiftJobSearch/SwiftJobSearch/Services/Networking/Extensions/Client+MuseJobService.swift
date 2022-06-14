@@ -6,5 +6,11 @@
 //
 
 import Foundation
+import Moya
 
-
+extension Client: MuseJobService {
+    
+    func getJobs(completion: @escaping (Result<JobResponse, Error>) -> ())  {
+        requestMuseJobs(target: .engineeringJobs, completion: completion)
+    }
+}

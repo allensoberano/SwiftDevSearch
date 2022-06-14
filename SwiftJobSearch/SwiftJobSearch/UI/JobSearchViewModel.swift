@@ -7,19 +7,21 @@
 
 import Moya
 
+protocol JobSearchViewModelProtocol: AnyObject {
+    func onUpdateJobs()
+}
+
 class JobSearchViewModel {
     var jobs: [Job] = []
-    let provider = MoyaProvider<MuseJobTarget>()
     weak var delegate: JobSearchViewModelProtocol?
+    private let client: Client
     
-    private let networkManager: NetworkManager
-    
-    init(networkManager: NetworkManager = NetworkManager()) {
-        self.networkManager = networkManager
+    init(client: Client = Client()) {
+        self.client = client
     }
     
     func loadJobs(){
-        networkManager.getJobs { [weak self] result in
+        client.getJobs { [weak self] result in
             switch result {
             case .success(let response):
                 self?.jobs = response.results

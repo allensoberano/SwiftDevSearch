@@ -8,5 +8,5 @@
 import Foundation
 
 protocol MuseJobService {
-    func engineeringJobs() -> [Job]
+    func getJobs(completion: @escaping (Result<JobResponse, Error>) -> ())
 }
