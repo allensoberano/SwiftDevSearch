@@ -16,32 +16,37 @@ extension MuseJobTarget: TargetType {
     var baseURL: URL {
         return URL(string: Secrets.Muse.apiUrl)!
     }
-    
+
     var path: String {
         switch self {
         case .engineeringJobs:
             return "/api/public/jobs"
         }
     }
-    
+
     var method: Moya.Method {
         switch self {
         case .engineeringJobs:
             return .get
         }
     }
-    
+
     var task: Task {
         switch self {
         case .engineeringJobs:
-            return .requestParameters(parameters: ["category": "Software Engineer", "page": 1, "api_key": Secrets.Muse.apiKey], encoding: URLEncoding.default)
+            return .requestParameters(
+                parameters: [
+                    "category": "Software Engineer",
+                    "page": 1,
+                    "api_key": Secrets.Muse.apiKey
+                ], encoding: URLEncoding.default)
         }
     }
-    
-    var headers: [String : String]? {
+
+    var headers: [String: String]? {
         ["Content-Type": "application/json"]
     }
-    
+
     public var validationType: ValidationType {
         return .successCodes
     }

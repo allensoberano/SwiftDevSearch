@@ -15,12 +15,12 @@ class JobSearchViewModel {
     var jobs: [Job] = []
     weak var delegate: JobSearchViewModelProtocol?
     private let client: Client
-    
+
     init(client: Client = Client()) {
         self.client = client
     }
-    
-    func loadJobs(){
+
+    func loadJobs() {
         client.getJobs { [weak self] result in
             switch result {
             case .success(let response):

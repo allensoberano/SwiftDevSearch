@@ -8,12 +8,12 @@
 import UIKit
 
 extension UIView {
-    func instantiate(){
+    func instantiate() {
         if let viewContainer = self as? ViewContainer {
             viewContainer.styleView()
             viewContainer.addSubviews()
         }
-        
+
         if let responder = self as? InteractionResponder {
             responder.setupInteractions()
         }

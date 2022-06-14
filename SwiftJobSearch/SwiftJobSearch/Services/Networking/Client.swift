@@ -9,14 +9,15 @@ import Foundation
 import Moya
 
 final class Client {
-    
+
     private lazy var middlewareMuseJobProvider: MoyaProvider<MuseJobTarget> = {
         var plugins = verbosePlugin()
 
         return MoyaProvider<MuseJobTarget>(plugins: plugins)
     }()
-    
-    func requestMuseJobs<T: Decodable>(target: MuseJobTarget, completion: @escaping (Result<T, Error>) -> ()) {        middlewareMuseJobProvider.request(.engineeringJobs){ result in
+
+    func requestMuseJobs<T: Decodable>(target: MuseJobTarget, completion: @escaping (Result<T, Error>) -> Void) {
+        middlewareMuseJobProvider.request(.engineeringJobs) { result in
             switch result {
             case .success(let response):
                 do {
@@ -32,8 +33,8 @@ final class Client {
 }
 
 extension Client {
-    
-    private func verbosePlugin() -> [PluginType]{
+
+    private func verbosePlugin() -> [PluginType] {
         var plugins: [PluginType] = []
 
         #if DEBUG
