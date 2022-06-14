@@ -35,6 +35,9 @@
 		9FC288592856BAD700276F45 /* MuseJobTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC288582856BAD700276F45 /* MuseJobTarget.swift */; };
 		9FC2885D2856BB8900276F45 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2885C2856BB8900276F45 /* Secrets.swift */; };
 		9FE79171285809FB0064A509 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE79170285809FB0064A509 /* Client.swift */; };
+		9FF437A728590DC1007E8574 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437A628590DC1007E8574 /* NetworkManager.swift */; };
+		9FF437A928591DF4007E8574 /* JobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437A828591DF4007E8574 /* JobResponse.swift */; };
+		9FF437AB28592851007E8574 /* JobSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437AA28592851007E8574 /* JobSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		9FC288582856BAD700276F45 /* MuseJobTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseJobTarget.swift; sourceTree = "<group>"; };
 		9FC2885C2856BB8900276F45 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		9FE79170285809FB0064A509 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		9FF437A628590DC1007E8574 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9FF437A828591DF4007E8574 /* JobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResponse.swift; sourceTree = "<group>"; };
+		9FF437AA28592851007E8574 /* JobSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,21 +208,14 @@
 		9FC287F02852793600276F45 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9FC287F128527A9900276F45 /* RootViewTableViewCells */,
+				9FC2883C2853CC1800276F45 /* RootViewCollectionViewCell.swift */,
 				9FC2877428513F1200276F45 /* RootViewController.swift */,
 				9FC288482853F1E100276F45 /* AboutViewController.swift */,
 				9FC2884A285564DD00276F45 /* AboutViewModel.swift */,
 				9F40927D2857A3D5007768A4 /* JobSearchViewController.swift */,
+				9FF437AA28592851007E8574 /* JobSearchViewModel.swift */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		9FC287F128527A9900276F45 /* RootViewTableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				9FC2883C2853CC1800276F45 /* RootViewCollectionViewCell.swift */,
-			);
-			path = RootViewTableViewCells;
 			sourceTree = "<group>";
 		};
 		9FC2884F2856B7F200276F45 /* Services */ = {
@@ -234,6 +233,7 @@
 				9FC288572856BABC00276F45 /* Targets */,
 				9FC288512856B80800276F45 /* Protocols */,
 				9FE79170285809FB0064A509 /* Client.swift */,
+				9FF437A628590DC1007E8574 /* NetworkManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -250,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC288552856B95E00276F45 /* Job.swift */,
+				9FF437A828591DF4007E8574 /* JobResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -423,6 +424,7 @@
 				9FC2885D2856BB8900276F45 /* Secrets.swift in Sources */,
 				9FC2884B285564DD00276F45 /* AboutViewModel.swift in Sources */,
 				9FC287AC28526F8100276F45 /* ViewContainer.swift in Sources */,
+				9FF437A728590DC1007E8574 /* NetworkManager.swift in Sources */,
 				9FC2877528513F1200276F45 /* RootViewController.swift in Sources */,
 				9FC288532856B81F00276F45 /* MuseJobService.swift in Sources */,
 				9FC2883D2853CC1800276F45 /* RootViewCollectionViewCell.swift in Sources */,
@@ -430,9 +432,11 @@
 				9FC287A728526A2100276F45 /* InteractionResponder.swift in Sources */,
 				9F09D9882856C635006059AA /* Client+MuseJobService.swift in Sources */,
 				9F40927E2857A3D5007768A4 /* JobSearchViewController.swift in Sources */,
+				9FF437AB28592851007E8574 /* JobSearchViewModel.swift in Sources */,
 				9FC2883F2853DC7E00276F45 /* CollectionViewConfiguration.swift in Sources */,
 				9FC287F528527E7200276F45 /* UIView+Instantiate.swift in Sources */,
 				9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */,
+				9FF437A928591DF4007E8574 /* JobResponse.swift in Sources */,
 				9FC288592856BAD700276F45 /* MuseJobTarget.swift in Sources */,
 				9FC288492853F1E100276F45 /* AboutViewController.swift in Sources */,
 				9FC2877328513F1200276F45 /* SceneDelegate.swift in Sources */,

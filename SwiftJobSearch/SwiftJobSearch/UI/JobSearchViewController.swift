@@ -9,11 +9,11 @@ import Moya
 import UIKit
 import SnapKit
 
-struct JobSearchViewModel {
-    var jobs: [Job] = []
-    let provider = MoyaProvider<MuseJobTarget>()
-    
+protocol JobSearchViewModelProtocol: AnyObject {
+    func onUpdateJobs()
 }
+
+
 
 class JobSearchViewController: UIViewController {
     
@@ -38,20 +38,8 @@ class JobSearchViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        provider.request(.engineeringJobs){ result in
-            switch result {
-            case .success(let response):
-                do {
-                    let results = try response.map([Job].self, atKeyPath: "results")
-                    self.jobs = results
-                    self.tableView.reloadData()
-                } catch {
-                    print("Error Encoding Jobs")
-                }
-            case .failure(let error):
-               print(error)
-            }
-        }
+        viewModel.delegate = self
+        viewModel.loadJobs()
     }
 }
 
@@ -73,21 +61,24 @@ extension JobSearchViewController: ViewContainer {
             make.edges.equalToSuperview()
         }
     }
-    
 }
 
 extension JobSearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return jobs.count
+        return viewModel.jobs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.accessoryType = .disclosureIndicator
-        cell.textLabel?.text = jobs[indexPath.row].jobTitle
+        cell.textLabel?.text = viewModel.jobs[indexPath.row].jobTitle
         return cell
     }
-    
-    
 }
 
+extension JobSearchViewController: JobSearchViewModelProtocol {
+    func onUpdateJobs() {
+        print(viewModel.jobs)
+        tableView.reloadData()
+    }
+}

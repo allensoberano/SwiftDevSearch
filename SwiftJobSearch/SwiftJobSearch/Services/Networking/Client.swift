@@ -24,20 +24,20 @@ final class Client {
         return MoyaProvider<MuseJobTarget>(plugins: plugins)
     }()
     
-//    func requestMuseJob() -> <#Return Type#>(){
-//        return middlewareMuseJobProvider.request(.engineeringJobs){ result in
-//            switch result {
-//            case .success(let response):
-//                do {
-//                    let results = try response.map([Job].self, atKeyPath: "results")
-//                    self.jobs = results
-//                    self.tableView.reloadData()
-//                } catch {
-//                    print("Error Encoding Jobs")
-//                }
-//            case .failure(let error):
-//               print(error)
-//            }
-//        }
-//    }
+    func requestMuseJobs() -> [Job]{
+        var jobs: [Job] = []
+        let _ = middlewareMuseJobProvider.request(.engineeringJobs){ result in
+            switch result {
+            case .success(let response):
+                do {
+                    jobs = try response.map([Job].self, atKeyPath: "results")
+                } catch {
+                    print("Error Encoding Jobs")
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+        return jobs
+    }
 }
