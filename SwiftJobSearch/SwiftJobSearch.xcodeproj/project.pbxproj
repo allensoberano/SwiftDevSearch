@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F09D9882856C635006059AA /* Client+MuseJobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09D9872856C635006059AA /* Client+MuseJobService.swift */; };
+		9F40927E2857A3D5007768A4 /* JobSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40927D2857A3D5007768A4 /* JobSearchViewController.swift */; };
 		9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2877028513F1200276F45 /* AppDelegate.swift */; };
 		9FC2877328513F1200276F45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2877228513F1200276F45 /* SceneDelegate.swift */; };
 		9FC2877528513F1200276F45 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2877428513F1200276F45 /* RootViewController.swift */; };
@@ -16,12 +18,10 @@
 		9FC2879228513F1500276F45 /* SwiftJobSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2879128513F1500276F45 /* SwiftJobSearchUITests.swift */; };
 		9FC2879428513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2879328513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift */; };
 		9FC287A2285260F100276F45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FC287A1285260F100276F45 /* SnapKit */; };
-		9FC287A42852695800276F45 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287A32852695800276F45 /* SecondViewController.swift */; };
 		9FC287A728526A2100276F45 /* InteractionResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287A628526A2100276F45 /* InteractionResponder.swift */; };
 		9FC287AA28526E3900276F45 /* UIViewController+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287A928526E3900276F45 /* UIViewController+Instantiate.swift */; };
 		9FC287AC28526F8100276F45 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287AB28526F8100276F45 /* ViewContainer.swift */; };
 		9FC287AF2852731F00276F45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FC287B12852731F00276F45 /* Localizable.strings */; };
-		9FC287F328527AED00276F45 /* RootViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287F228527AED00276F45 /* RootViewTableViewCell.swift */; };
 		9FC287F528527E7200276F45 /* UIView+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287F428527E7200276F45 /* UIView+Instantiate.swift */; };
 		9FC287F7285280CC00276F45 /* UITableView+DefaultIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287F6285280CC00276F45 /* UITableView+DefaultIdentifier.swift */; };
 		9FC287FB2852997F00276F45 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC287FA2852997F00276F45 /* UIColor+Random.swift */; };
@@ -34,6 +34,7 @@
 		9FC288562856B95E00276F45 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC288552856B95E00276F45 /* Job.swift */; };
 		9FC288592856BAD700276F45 /* MuseJobTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC288582856BAD700276F45 /* MuseJobTarget.swift */; };
 		9FC2885D2856BB8900276F45 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2885C2856BB8900276F45 /* Secrets.swift */; };
+		9FE79171285809FB0064A509 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE79170285809FB0064A509 /* Client.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F09D9872856C635006059AA /* Client+MuseJobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+MuseJobService.swift"; sourceTree = "<group>"; };
+		9F40927D2857A3D5007768A4 /* JobSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchViewController.swift; sourceTree = "<group>"; };
 		9FC2876D28513F1200276F45 /* SwiftJobSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftJobSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC2877028513F1200276F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC2877228513F1200276F45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,14 +69,12 @@
 		9FC2878D28513F1500276F45 /* SwiftJobSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJobSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC2879128513F1500276F45 /* SwiftJobSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchUITests.swift; sourceTree = "<group>"; };
 		9FC2879328513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9FC287A32852695800276F45 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9FC287A628526A2100276F45 /* InteractionResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionResponder.swift; sourceTree = "<group>"; };
 		9FC287A928526E3900276F45 /* UIViewController+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiate.swift"; sourceTree = "<group>"; };
 		9FC287AB28526F8100276F45 /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 		9FC287B02852731F00276F45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9FC287B22852733300276F45 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9FC287B32852733300276F45 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9FC287F228527AED00276F45 /* RootViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTableViewCell.swift; sourceTree = "<group>"; };
 		9FC287F428527E7200276F45 /* UIView+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Instantiate.swift"; sourceTree = "<group>"; };
 		9FC287F6285280CC00276F45 /* UITableView+DefaultIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+DefaultIdentifier.swift"; sourceTree = "<group>"; };
 		9FC287FA2852997F00276F45 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		9FC288552856B95E00276F45 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		9FC288582856BAD700276F45 /* MuseJobTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseJobTarget.swift; sourceTree = "<group>"; };
 		9FC2885C2856BB8900276F45 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		9FE79170285809FB0064A509 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F09D9862856C61A006059AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F09D9872856C635006059AA /* Client+MuseJobService.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9FC2876428513F1200276F45 = {
 			isa = PBXGroup;
 			children = (
@@ -194,9 +204,9 @@
 			children = (
 				9FC287F128527A9900276F45 /* RootViewTableViewCells */,
 				9FC2877428513F1200276F45 /* RootViewController.swift */,
-				9FC287A32852695800276F45 /* SecondViewController.swift */,
 				9FC288482853F1E100276F45 /* AboutViewController.swift */,
 				9FC2884A285564DD00276F45 /* AboutViewModel.swift */,
+				9F40927D2857A3D5007768A4 /* JobSearchViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -204,7 +214,6 @@
 		9FC287F128527A9900276F45 /* RootViewTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				9FC287F228527AED00276F45 /* RootViewTableViewCell.swift */,
 				9FC2883C2853CC1800276F45 /* RootViewCollectionViewCell.swift */,
 			);
 			path = RootViewTableViewCells;
@@ -221,8 +230,10 @@
 		9FC288502856B7FA00276F45 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				9F09D9862856C61A006059AA /* Extensions */,
 				9FC288572856BABC00276F45 /* Targets */,
 				9FC288512856B80800276F45 /* Protocols */,
+				9FE79170285809FB0064A509 /* Client.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -410,8 +421,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC2885D2856BB8900276F45 /* Secrets.swift in Sources */,
-				9FC287F328527AED00276F45 /* RootViewTableViewCell.swift in Sources */,
-				9FC287A42852695800276F45 /* SecondViewController.swift in Sources */,
 				9FC2884B285564DD00276F45 /* AboutViewModel.swift in Sources */,
 				9FC287AC28526F8100276F45 /* ViewContainer.swift in Sources */,
 				9FC2877528513F1200276F45 /* RootViewController.swift in Sources */,
@@ -419,6 +428,8 @@
 				9FC2883D2853CC1800276F45 /* RootViewCollectionViewCell.swift in Sources */,
 				9FC287FB2852997F00276F45 /* UIColor+Random.swift in Sources */,
 				9FC287A728526A2100276F45 /* InteractionResponder.swift in Sources */,
+				9F09D9882856C635006059AA /* Client+MuseJobService.swift in Sources */,
+				9F40927E2857A3D5007768A4 /* JobSearchViewController.swift in Sources */,
 				9FC2883F2853DC7E00276F45 /* CollectionViewConfiguration.swift in Sources */,
 				9FC287F528527E7200276F45 /* UIView+Instantiate.swift in Sources */,
 				9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */,
@@ -427,6 +438,7 @@
 				9FC2877328513F1200276F45 /* SceneDelegate.swift in Sources */,
 				9FC288562856B95E00276F45 /* Job.swift in Sources */,
 				9FC287F7285280CC00276F45 /* UITableView+DefaultIdentifier.swift in Sources */,
+				9FE79171285809FB0064A509 /* Client.swift in Sources */,
 				9FC287AA28526E3900276F45 /* UIViewController+Instantiate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

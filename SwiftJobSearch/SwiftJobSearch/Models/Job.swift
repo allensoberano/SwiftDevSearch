@@ -11,7 +11,7 @@ struct Job: Codable {
     let description: String
     let jobTitle: String
     let postDate: String
-    let id: String
+    let id: Int
     
     enum CodingKeys: String, CodingKey {
         case description = "contents"

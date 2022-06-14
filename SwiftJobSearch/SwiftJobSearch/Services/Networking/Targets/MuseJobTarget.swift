@@ -34,7 +34,7 @@ extension MuseJobTarget: TargetType {
     var task: Task {
         switch self {
         case .engineeringJobs:
-            return .requestParameters(parameters: ["category": "Software Engineer", "category": "Software Engineering", "page": 1, "api_key": Secrets.Muse.ap], encoding: <#T##ParameterEncoding#>)
+            return .requestParameters(parameters: ["category": "Software Engineer", "page": 1, "api_key": Secrets.Muse.apiKey], encoding: URLEncoding.default)
         }
     }
     
@@ -42,5 +42,8 @@ extension MuseJobTarget: TargetType {
         ["Content-Type": "application/json"]
     }
     
+    public var validationType: ValidationType {
+        return .successCodes
+    }
 
 }

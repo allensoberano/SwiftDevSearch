@@ -67,7 +67,6 @@ extension RootViewController: ViewContainer {
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         collectionView.backgroundColor = .systemBackground
         collectionView.delegate = self
-        //collectionView.delegate = self
         collectionView.register(RootViewCollectionViewCell.self, forCellWithReuseIdentifier: RootViewCollectionViewCell.reuseIdentifer)
         itemsCollectionView = collectionView
     }
@@ -127,15 +126,17 @@ extension RootViewController: CollectionViewConfiguration {
 
 extension RootViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
+        //guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
         let itemSelected = indexPath.row
         
         let vc: UIViewController!
         switch itemSelected {
         case 0:
             vc = AboutViewController()
+        case 1:
+            vc = JobSearchViewController()
         default:
-            vc = SecondViewController()
+            vc = AboutViewController()
         }
         navigationController?.pushViewController(vc, animated: true)
     }
