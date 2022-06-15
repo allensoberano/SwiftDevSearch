@@ -39,6 +39,7 @@ class JobSearchViewController: UIViewController {
 extension JobSearchViewController: ViewContainer {
     func styleView() {
         view.backgroundColor = .white
+        navigationItem.title = "Job Search"
     }
 
     func addSubviews() {
@@ -66,6 +67,11 @@ extension JobSearchViewController: UITableViewDelegate, UITableViewDataSource {
         cell.accessoryType = .disclosureIndicator
         cell.textLabel?.text = viewModel.jobs[indexPath.row].jobTitle
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = JobDetailsViewController(job: viewModel.jobs[indexPath.row])
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
