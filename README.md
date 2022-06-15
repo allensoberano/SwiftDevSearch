@@ -41,4 +41,9 @@ Swift, Moya/Alomofire, Snapkit
 ## Demo
 ![Sjs](https://user-images.githubusercontent.com/6010582/173959503-1bf23dc1-0d00-4258-b177-3fcd64dfece3.gif)
 
+<style type="text/css">
+    img {
+        width: 250px;
+    }
+</style>
 
