@@ -18,7 +18,7 @@ In order to run the app you will need the file with the API Keys or you can use 
 If you would like to build and run the app, contact me and I will send you the secrets file if necessary.
 
 # UI: 
-Collection Views, Compositional Layout, and TableViews
+Collection Views, Compositional Layout, and TableViews.
 To save time I just made the main view buttons random colors that change whenever the project is run.
 
 # APIs
