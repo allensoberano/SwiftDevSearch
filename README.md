@@ -34,5 +34,5 @@ Swift, Moya/Alomofire, Snapkit
 
 ## Demo
 
-![ Alt text](Sjs. gif) / ! []
+Insert gif or link to demo
 
