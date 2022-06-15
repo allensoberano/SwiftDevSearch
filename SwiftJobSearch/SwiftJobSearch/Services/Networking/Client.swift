@@ -10,6 +10,7 @@ import Moya
 
 final class Client {
 
+    // MARK: MuseJob
     private lazy var middlewareMuseJobProvider: MoyaProvider<MuseJobTarget> = {
         var plugins = verbosePlugin()
 
@@ -30,6 +31,28 @@ final class Client {
             }
         }
     }
+
+    private lazy var middlewareListenPodcastsProvider: MoyaProvider<ListenPodcastsTarget> = {
+        var plugins = verbosePlugin()
+
+        return MoyaProvider<ListenPodcastsTarget>(plugins: plugins)
+    }()
+
+    func requestPodcasts<T: Decodable>(target: ListenPodcastsTarget, completion: @escaping (Result<T, Error>) -> Void) {
+        middlewareListenPodcastsProvider.request(.podcasts) { result in
+            switch result {
+            case .success(let response):
+                do {
+                    if let results = try? JSONDecoder().decode(T.self, from: response.data) {
+                        completion(.success(results))
+                    }
+                }
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
+    }
+
 }
 
 extension Client {

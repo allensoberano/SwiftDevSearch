@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F04E5B0285A5C4B00648527 /* ListenPodcastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04E5AF285A5C4B00648527 /* ListenPodcastService.swift */; };
+		9F04E5B2285A5C8800648527 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04E5B1285A5C8800648527 /* Podcast.swift */; };
+		9F04E5B4285A5D0B00648527 /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04E5B3285A5D0B00648527 /* PodcastResponse.swift */; };
+		9F04E5B6285A602F00648527 /* Client+ListenPodcastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04E5B5285A602F00648527 /* Client+ListenPodcastService.swift */; };
+		9F04E5B8285A607900648527 /* ListenPodcastsTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04E5B7285A607900648527 /* ListenPodcastsTarget.swift */; };
+		9F04E5BF285A8E1300648527 /* PodcastsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04E5BE285A8E1300648527 /* PodcastsDetailsViewController.swift */; };
+		9F04E5C1285A90CC00648527 /* UIImageView+LoadFromHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F04E5C0285A90CC00648527 /* UIImageView+LoadFromHTML.swift */; };
 		9F09D9882856C635006059AA /* Client+MuseJobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09D9872856C635006059AA /* Client+MuseJobService.swift */; };
 		9F40927E2857A3D5007768A4 /* JobSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40927D2857A3D5007768A4 /* JobSearchViewController.swift */; };
 		9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2877028513F1200276F45 /* AppDelegate.swift */; };
@@ -35,8 +42,9 @@
 		9FC288592856BAD700276F45 /* MuseJobTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC288582856BAD700276F45 /* MuseJobTarget.swift */; };
 		9FC2885D2856BB8900276F45 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2885C2856BB8900276F45 /* Secrets.swift */; };
 		9FE7A732285949BA009DABB0 /* JobDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A731285949BA009DABB0 /* JobDetailsViewController.swift */; };
-		9FE7A73428595348009DABB0 /* JobDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A73328595348009DABB0 /* JobDetailsViewModel.swift */; };
 		9FE7A7362859ACB7009DABB0 /* String+HTMLConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A7352859ACB7009DABB0 /* String+HTMLConverter.swift */; };
+		9FE7A73C285A3AE4009DABB0 /* PodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A73B285A3AE4009DABB0 /* PodcastsViewController.swift */; };
+		9FE7A73E285A3B37009DABB0 /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A73D285A3B37009DABB0 /* PodcastViewModel.swift */; };
 		9FF437A728590DC1007E8574 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437A628590DC1007E8574 /* Client.swift */; };
 		9FF437A928591DF4007E8574 /* JobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437A828591DF4007E8574 /* JobResponse.swift */; };
 		9FF437AB28592851007E8574 /* JobSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437AA28592851007E8574 /* JobSearchViewModel.swift */; };
@@ -60,6 +68,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F04E5AF285A5C4B00648527 /* ListenPodcastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenPodcastService.swift; sourceTree = "<group>"; };
+		9F04E5B1285A5C8800648527 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		9F04E5B3285A5D0B00648527 /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
+		9F04E5B5285A602F00648527 /* Client+ListenPodcastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+ListenPodcastService.swift"; sourceTree = "<group>"; };
+		9F04E5B7285A607900648527 /* ListenPodcastsTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenPodcastsTarget.swift; sourceTree = "<group>"; };
+		9F04E5BE285A8E1300648527 /* PodcastsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsDetailsViewController.swift; sourceTree = "<group>"; };
+		9F04E5C0285A90CC00648527 /* UIImageView+LoadFromHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadFromHTML.swift"; sourceTree = "<group>"; };
 		9F09D9872856C635006059AA /* Client+MuseJobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+MuseJobService.swift"; sourceTree = "<group>"; };
 		9F40927D2857A3D5007768A4 /* JobSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchViewController.swift; sourceTree = "<group>"; };
 		9FC2876D28513F1200276F45 /* SwiftJobSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftJobSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,8 +105,9 @@
 		9FC288582856BAD700276F45 /* MuseJobTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseJobTarget.swift; sourceTree = "<group>"; };
 		9FC2885C2856BB8900276F45 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		9FE7A731285949BA009DABB0 /* JobDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewController.swift; sourceTree = "<group>"; };
-		9FE7A73328595348009DABB0 /* JobDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewModel.swift; sourceTree = "<group>"; };
 		9FE7A7352859ACB7009DABB0 /* String+HTMLConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLConverter.swift"; sourceTree = "<group>"; };
+		9FE7A73B285A3AE4009DABB0 /* PodcastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsViewController.swift; sourceTree = "<group>"; };
+		9FE7A73D285A3B37009DABB0 /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
 		9FF437A628590DC1007E8574 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		9FF437A828591DF4007E8574 /* JobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResponse.swift; sourceTree = "<group>"; };
 		9FF437AA28592851007E8574 /* JobSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchViewModel.swift; sourceTree = "<group>"; };
@@ -128,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9F09D9872856C635006059AA /* Client+MuseJobService.swift */,
+				9F04E5B5285A602F00648527 /* Client+ListenPodcastService.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -204,6 +221,7 @@
 				9FC287F6285280CC00276F45 /* UITableView+DefaultIdentifier.swift */,
 				9FC287FA2852997F00276F45 /* UIColor+Random.swift */,
 				9FE7A7352859ACB7009DABB0 /* String+HTMLConverter.swift */,
+				9F04E5C0285A90CC00648527 /* UIImageView+LoadFromHTML.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,14 +229,11 @@
 		9FC287F02852793600276F45 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9FE7A73A285A3AA3009DABB0 /* PodcastViews */,
+				9FE7A739285A3A77009DABB0 /* AboutViews */,
+				9FE7A737285A3A46009DABB0 /* JobSearchViews */,
 				9FC2883C2853CC1800276F45 /* RootViewCollectionViewCell.swift */,
 				9FC2877428513F1200276F45 /* RootViewController.swift */,
-				9FC288482853F1E100276F45 /* AboutViewController.swift */,
-				9FC2884A285564DD00276F45 /* AboutViewModel.swift */,
-				9F40927D2857A3D5007768A4 /* JobSearchViewController.swift */,
-				9FF437AA28592851007E8574 /* JobSearchViewModel.swift */,
-				9FE7A731285949BA009DABB0 /* JobDetailsViewController.swift */,
-				9FE7A73328595348009DABB0 /* JobDetailsViewModel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -246,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC288522856B81F00276F45 /* MuseJobService.swift */,
+				9F04E5AF285A5C4B00648527 /* ListenPodcastService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -255,6 +271,8 @@
 			children = (
 				9FC288552856B95E00276F45 /* Job.swift */,
 				9FF437A828591DF4007E8574 /* JobResponse.swift */,
+				9F04E5B1285A5C8800648527 /* Podcast.swift */,
+				9F04E5B3285A5D0B00648527 /* PodcastResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC288582856BAD700276F45 /* MuseJobTarget.swift */,
+				9F04E5B7285A607900648527 /* ListenPodcastsTarget.swift */,
 			);
 			path = Targets;
 			sourceTree = "<group>";
@@ -283,6 +302,35 @@
 				9FC2885C2856BB8900276F45 /* Secrets.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9FE7A737285A3A46009DABB0 /* JobSearchViews */ = {
+			isa = PBXGroup;
+			children = (
+				9F40927D2857A3D5007768A4 /* JobSearchViewController.swift */,
+				9FF437AA28592851007E8574 /* JobSearchViewModel.swift */,
+				9FE7A731285949BA009DABB0 /* JobDetailsViewController.swift */,
+			);
+			path = JobSearchViews;
+			sourceTree = "<group>";
+		};
+		9FE7A739285A3A77009DABB0 /* AboutViews */ = {
+			isa = PBXGroup;
+			children = (
+				9FC288482853F1E100276F45 /* AboutViewController.swift */,
+				9FC2884A285564DD00276F45 /* AboutViewModel.swift */,
+			);
+			path = AboutViews;
+			sourceTree = "<group>";
+		};
+		9FE7A73A285A3AA3009DABB0 /* PodcastViews */ = {
+			isa = PBXGroup;
+			children = (
+				9FE7A73B285A3AE4009DABB0 /* PodcastsViewController.swift */,
+				9FE7A73D285A3B37009DABB0 /* PodcastViewModel.swift */,
+				9F04E5BE285A8E1300648527 /* PodcastsDetailsViewController.swift */,
+			);
+			path = PodcastViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,25 +497,33 @@
 				9FC2884B285564DD00276F45 /* AboutViewModel.swift in Sources */,
 				9FC287AC28526F8100276F45 /* ViewContainer.swift in Sources */,
 				9FF437A728590DC1007E8574 /* Client.swift in Sources */,
+				9F04E5BF285A8E1300648527 /* PodcastsDetailsViewController.swift in Sources */,
 				9FC2877528513F1200276F45 /* RootViewController.swift in Sources */,
 				9FC288532856B81F00276F45 /* MuseJobService.swift in Sources */,
+				9F04E5B6285A602F00648527 /* Client+ListenPodcastService.swift in Sources */,
 				9FC2883D2853CC1800276F45 /* RootViewCollectionViewCell.swift in Sources */,
 				9FC287FB2852997F00276F45 /* UIColor+Random.swift in Sources */,
 				9FC287A728526A2100276F45 /* InteractionResponder.swift in Sources */,
 				9F09D9882856C635006059AA /* Client+MuseJobService.swift in Sources */,
+				9FE7A73E285A3B37009DABB0 /* PodcastViewModel.swift in Sources */,
+				9F04E5B8285A607900648527 /* ListenPodcastsTarget.swift in Sources */,
 				9FE7A732285949BA009DABB0 /* JobDetailsViewController.swift in Sources */,
+				9F04E5C1285A90CC00648527 /* UIImageView+LoadFromHTML.swift in Sources */,
 				9F40927E2857A3D5007768A4 /* JobSearchViewController.swift in Sources */,
 				9FF437AB28592851007E8574 /* JobSearchViewModel.swift in Sources */,
 				9FC2883F2853DC7E00276F45 /* CollectionViewConfiguration.swift in Sources */,
 				9FC287F528527E7200276F45 /* UIView+Instantiate.swift in Sources */,
 				9FC2877128513F1200276F45 /* AppDelegate.swift in Sources */,
 				9FF437A928591DF4007E8574 /* JobResponse.swift in Sources */,
-				9FE7A73428595348009DABB0 /* JobDetailsViewModel.swift in Sources */,
 				9FC288592856BAD700276F45 /* MuseJobTarget.swift in Sources */,
+				9F04E5B2285A5C8800648527 /* Podcast.swift in Sources */,
 				9FC288492853F1E100276F45 /* AboutViewController.swift in Sources */,
 				9FC2877328513F1200276F45 /* SceneDelegate.swift in Sources */,
 				9FC288562856B95E00276F45 /* Job.swift in Sources */,
+				9F04E5B0285A5C4B00648527 /* ListenPodcastService.swift in Sources */,
+				9F04E5B4285A5D0B00648527 /* PodcastResponse.swift in Sources */,
 				9FC287F7285280CC00276F45 /* UITableView+DefaultIdentifier.swift in Sources */,
+				9FE7A73C285A3AE4009DABB0 /* PodcastsViewController.swift in Sources */,
 				9FE7A7362859ACB7009DABB0 /* String+HTMLConverter.swift in Sources */,
 				9FC287AA28526E3900276F45 /* UIViewController+Instantiate.swift in Sources */,
 			);

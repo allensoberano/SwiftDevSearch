@@ -9,6 +9,8 @@ import UIKit
 import SnapKit
 
 struct RootViewModel {
+
+    let navTitle = "Swift Job Search"
     let menuItems = [
         "About", "Job Search", "Podcasts",
         "Places We Love", "Dev Music", "Contact",
@@ -57,7 +59,8 @@ extension RootViewController: ViewContainer {
     }
 
     private func styleNavBar() {
-        navigationItem.title = "Swift Job Search"
+        navigationItem.title = viewModel.navTitle
+
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .orange
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -147,6 +150,8 @@ extension RootViewController: UICollectionViewDelegate {
             viewController = AboutViewController()
         case 1:
             viewController = JobSearchViewController()
+        case 2:
+            viewController = PodcastsViewController()
         default:
             viewController = AboutViewController()
         }

@@ -19,9 +19,9 @@ struct AboutViewModel {
     ]
 
     let body = [
-        "Created as an example to demonstrate swift skils and show example code. Using a variety of skills.",
+        "Created as an example to demonstrate swift skils and show example code.",
         "Collection View with Compositional Layout and Table Views for the list views",
         "UIKitk, SnapKit, Moya/Alamofire",
-        "The Muse, Spotify Podcasts, Spotify Music, Unsplash"
+        "The Muse, ListenNotes, Unsplash"
     ]
 }

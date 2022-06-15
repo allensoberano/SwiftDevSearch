@@ -7,16 +7,16 @@
 
 struct JobResponse: Codable {
     let page, pageCount, itemsPerPage, took: Int
-        let timedOut: Bool
-        let total: Int
-        let results: [Job]
+    let timedOut: Bool
+    let total: Int
+    let results: [Job]
 
-        enum CodingKeys: String, CodingKey {
-            case page
-            case pageCount = "page_count"
-            case itemsPerPage = "items_per_page"
-            case took
-            case timedOut = "timed_out"
-            case total, results
-        }
+    enum CodingKeys: String, CodingKey {
+        case page
+        case pageCount = "page_count"
+        case itemsPerPage = "items_per_page"
+        case took
+        case timedOut = "timed_out"
+        case total, results
+    }
 }
