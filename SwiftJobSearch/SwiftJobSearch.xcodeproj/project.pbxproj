@@ -78,8 +78,6 @@
 		9FC287A928526E3900276F45 /* UIViewController+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiate.swift"; sourceTree = "<group>"; };
 		9FC287AB28526F8100276F45 /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 		9FC287B02852731F00276F45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9FC287B22852733300276F45 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		9FC287B32852733300276F45 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9FC287F428527E7200276F45 /* UIView+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Instantiate.swift"; sourceTree = "<group>"; };
 		9FC287F6285280CC00276F45 /* UITableView+DefaultIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+DefaultIdentifier.swift"; sourceTree = "<group>"; };
 		9FC287FA2852997F00276F45 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
@@ -378,7 +376,6 @@
 			knownRegions = (
 				en,
 				Base,
-				es,
 			);
 			mainGroup = 9FC2876428513F1200276F45;
 			packageReferences = (
@@ -513,7 +510,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FC2877C28513F1400276F45 /* Base */,
-				9FC287B22852733300276F45 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -522,7 +518,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FC287B02852731F00276F45 /* en */,
-				9FC287B32852733300276F45 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
