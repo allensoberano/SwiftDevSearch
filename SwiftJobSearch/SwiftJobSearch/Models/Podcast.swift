@@ -8,19 +8,19 @@
 import Foundation
 
 struct Podcast: Codable {
+    let descriptionOriginal: String
     let id: String
     let image: String
+    let listennotesURL: String
     let thumbnail: String
     let titleOriginal: String
-    let descriptionOriginal: String
-    let listennotesURL: String
 
     enum CodingKeys: String, CodingKey {
+        case descriptionOriginal = "description_original"
         case id = "id"
         case image = "image"
+        case listennotesURL = "listennotes_url"
         case thumbnail = "thumbnail"
         case titleOriginal = "title_original"
-        case descriptionOriginal = "description_original"
-        case listennotesURL = "listennotes_url"
     }
 }

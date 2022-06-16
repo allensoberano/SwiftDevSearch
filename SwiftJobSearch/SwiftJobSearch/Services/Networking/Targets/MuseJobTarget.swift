@@ -43,6 +43,18 @@ extension MuseJobTarget: TargetType {
         }
     }
 
+    var sampleData: Data {
+        switch self {
+        case .engineeringJobs:
+            return """
+                {\"results\":[{\"name\":\"Swift Developer\",\"contents\":\
+                "Develop mobile apps.\",\"company\":\"Hatch Software.\",\"id\":9174504,\
+                "publication_date\":\"2022-06-01T04:21:33Z\"}]}
+                """
+                .data(using: String.Encoding.utf8)!
+        }
+    }
+
     var headers: [String: String]? {
         ["Content-Type": "application/json"]
     }

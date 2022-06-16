@@ -8,18 +8,18 @@
 import Foundation
 
 struct Job: Codable {
+    let company: Company
     let description: String
     let jobTitle: String
-    let postDate: String
     let id: Int
-    let company: Company
+    let postDate: String
 
     enum CodingKeys: String, CodingKey {
+        case company = "company"
         case description = "contents"
         case jobTitle = "name"
-        case postDate = "publication_date"
         case id = "id"
-        case company = "company"
+        case postDate = "publication_date"
     }
 }
 
