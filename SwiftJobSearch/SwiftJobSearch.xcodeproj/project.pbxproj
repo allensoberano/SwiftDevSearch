@@ -21,7 +21,6 @@
 		9FC2877528513F1200276F45 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2877428513F1200276F45 /* RootViewController.swift */; };
 		9FC2877A28513F1400276F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC2877928513F1400276F45 /* Assets.xcassets */; };
 		9FC2877D28513F1400276F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC2877B28513F1400276F45 /* LaunchScreen.storyboard */; };
-		9FC2878828513F1500276F45 /* SwiftJobSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2878728513F1500276F45 /* SwiftJobSearchTests.swift */; };
 		9FC2879228513F1500276F45 /* SwiftJobSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2879128513F1500276F45 /* SwiftJobSearchUITests.swift */; };
 		9FC2879428513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2879328513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift */; };
 		9FC287A2285260F100276F45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FC287A1285260F100276F45 /* SnapKit */; };
@@ -86,7 +85,6 @@
 		9FC2877C28513F1400276F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC2877E28513F1400276F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC2878328513F1500276F45 /* SwiftJobSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJobSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FC2878728513F1500276F45 /* SwiftJobSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchTests.swift; sourceTree = "<group>"; };
 		9FC2878D28513F1500276F45 /* SwiftJobSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftJobSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC2879128513F1500276F45 /* SwiftJobSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchUITests.swift; sourceTree = "<group>"; };
 		9FC2879328513F1500276F45 /* SwiftJobSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJobSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				9FEDB7ED285CF5BD0019E823 /* Services */,
-				9FC2878728513F1500276F45 /* SwiftJobSearchTests.swift */,
 			);
 			path = SwiftJobSearchTests;
 			sourceTree = "<group>";
@@ -339,7 +336,6 @@
 		9FEDB7ED285CF5BD0019E823 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9FEDB7EF285CF7580019E823 /* UI */,
 				9FEDB7EE285CF62A0019E823 /* Networking */,
 			);
 			path = Services;
@@ -351,13 +347,6 @@
 				9FEDB7EB285BC1C30019E823 /* ClientTests.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		9FEDB7EF285CF7580019E823 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,7 +550,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FEDB7EC285BC1C30019E823 /* ClientTests.swift in Sources */,
-				9FC2878828513F1500276F45 /* SwiftJobSearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

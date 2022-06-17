@@ -33,9 +33,19 @@ class SwiftJobSearchUITests: XCTestCase {
         }
     }
 
-    func test_Job_shouldGoToAboutViewController() throws {
+    func test_Job_shouldGoToJobSearchViewController() throws {
         let jobButton = app.collectionViews.staticTexts["Job Search"]
         let navTitle = app.navigationBars["Job Search"].staticTexts["Job Search"]
+
+        if jobButton.isSelected {
+            XCTAssertTrue(navTitle.exists)
+            XCTAssertFalse(jobButton.exists)
+        }
+    }
+
+    func test_Podcasts_shouldGoToPodcastsViewController() throws {
+        let jobButton = app.collectionViews.staticTexts["Podcasts"]
+        let navTitle = app.navigationBars["Podcasts"].staticTexts["Job Search"]
 
         if jobButton.isSelected {
             XCTAssertTrue(navTitle.exists)
