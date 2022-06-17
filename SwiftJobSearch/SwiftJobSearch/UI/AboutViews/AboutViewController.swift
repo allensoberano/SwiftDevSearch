@@ -33,7 +33,7 @@ class AboutViewController: UIViewController {
 
 extension AboutViewController: ViewContainer {
     func styleView() {
-        view.backgroundColor = .white
+       view.backgroundColor = .white
     }
 
     func addSubviews() {

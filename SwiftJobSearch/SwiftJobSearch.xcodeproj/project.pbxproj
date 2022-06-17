@@ -191,8 +191,8 @@
 		9FC2878628513F1500276F45 /* SwiftJobSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				9FEDB7ED285CF5BD0019E823 /* Services */,
 				9FC2878728513F1500276F45 /* SwiftJobSearchTests.swift */,
-				9FEDB7EB285BC1C30019E823 /* ClientTests.swift */,
 			);
 			path = SwiftJobSearchTests;
 			sourceTree = "<group>";
@@ -334,6 +334,30 @@
 				9F04E5BE285A8E1300648527 /* PodcastsDetailsViewController.swift */,
 			);
 			path = PodcastViews;
+			sourceTree = "<group>";
+		};
+		9FEDB7ED285CF5BD0019E823 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9FEDB7EF285CF7580019E823 /* UI */,
+				9FEDB7EE285CF62A0019E823 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9FEDB7EE285CF62A0019E823 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9FEDB7EB285BC1C30019E823 /* ClientTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9FEDB7EF285CF7580019E823 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -713,6 +737,7 @@
 				INFOPLIST_FILE = SwiftJobSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -724,7 +749,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -740,6 +765,7 @@
 				INFOPLIST_FILE = SwiftJobSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -751,7 +777,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
