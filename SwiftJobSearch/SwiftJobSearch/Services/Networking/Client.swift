@@ -17,8 +17,14 @@ final class Client {
         return MoyaProvider<MuseJobTarget>(plugins: plugins)
     }()
 
-    func requestMuseJobs<T: Decodable>(target: MuseJobTarget, completion: @escaping (Result<T, Error>) -> Void) {
-        middlewareMuseJobProvider.request(.engineeringJobs) { result in
+    private let provider: MoyaProvider<MultiTarget>
+
+        init(provider: MoyaProvider<MultiTarget> = MoyaProvider<MultiTarget>()) {
+            self.provider = provider
+        }
+
+    func requestMuseJobs<T: Decodable>(completion: @escaping (Result<T, Error>) -> Void) {
+        provider.request(MultiTarget(MuseJobTarget.engineeringJobs)) { result in
             switch result {
             case .success(let response):
                 do {
@@ -32,14 +38,8 @@ final class Client {
         }
     }
 
-    private lazy var middlewareListenPodcastsProvider: MoyaProvider<ListenPodcastsTarget> = {
-        var plugins = verbosePlugin()
-
-        return MoyaProvider<ListenPodcastsTarget>(plugins: plugins)
-    }()
-
-    func requestPodcasts<T: Decodable>(target: ListenPodcastsTarget, completion: @escaping (Result<T, Error>) -> Void) {
-        middlewareListenPodcastsProvider.request(.podcasts) { result in
+    func requestPodcasts<T: Decodable>(completion: @escaping (Result<T, Error>) -> Void) {
+        provider.request(MultiTarget(ListenPodcastsTarget.podcasts)) { result in
             switch result {
             case .success(let response):
                 do {

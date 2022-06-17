@@ -45,6 +45,7 @@
 		9FE7A7362859ACB7009DABB0 /* String+HTMLConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A7352859ACB7009DABB0 /* String+HTMLConverter.swift */; };
 		9FE7A73C285A3AE4009DABB0 /* PodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A73B285A3AE4009DABB0 /* PodcastsViewController.swift */; };
 		9FE7A73E285A3B37009DABB0 /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A73D285A3B37009DABB0 /* PodcastViewModel.swift */; };
+		9FEDB7EC285BC1C30019E823 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDB7EB285BC1C30019E823 /* ClientTests.swift */; };
 		9FF437A728590DC1007E8574 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437A628590DC1007E8574 /* Client.swift */; };
 		9FF437A928591DF4007E8574 /* JobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437A828591DF4007E8574 /* JobResponse.swift */; };
 		9FF437AB28592851007E8574 /* JobSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF437AA28592851007E8574 /* JobSearchViewModel.swift */; };
@@ -108,6 +109,7 @@
 		9FE7A7352859ACB7009DABB0 /* String+HTMLConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLConverter.swift"; sourceTree = "<group>"; };
 		9FE7A73B285A3AE4009DABB0 /* PodcastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsViewController.swift; sourceTree = "<group>"; };
 		9FE7A73D285A3B37009DABB0 /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
+		9FEDB7EB285BC1C30019E823 /* ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTests.swift; sourceTree = "<group>"; };
 		9FF437A628590DC1007E8574 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		9FF437A828591DF4007E8574 /* JobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResponse.swift; sourceTree = "<group>"; };
 		9FF437AA28592851007E8574 /* JobSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchViewModel.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC2878728513F1500276F45 /* SwiftJobSearchTests.swift */,
+				9FEDB7EB285BC1C30019E823 /* ClientTests.swift */,
 			);
 			path = SwiftJobSearchTests;
 			sourceTree = "<group>";
@@ -484,7 +487,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "#if which swiftlint > /dev/null; then\n  #swiftlint\n#else\n # echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -533,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEDB7EC285BC1C30019E823 /* ClientTests.swift in Sources */,
 				9FC2878828513F1500276F45 /* SwiftJobSearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

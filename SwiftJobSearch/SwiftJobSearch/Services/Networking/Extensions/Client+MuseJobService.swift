@@ -10,6 +10,6 @@ import Foundation
 extension Client: MuseJobService {
 
     func getJobs(completion: @escaping (Result<JobResponse, Error>) -> Void) {
-        requestMuseJobs(target: .engineeringJobs, completion: completion)
+        requestMuseJobs(completion: completion)
     }
 }

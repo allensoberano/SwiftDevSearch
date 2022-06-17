@@ -24,3 +24,14 @@ struct Podcast: Codable {
         case titleOriginal = "title_original"
     }
 }
+
+extension Podcast: Equatable {
+    static func == (lhs: Podcast, rhs: Podcast) -> Bool {
+        return lhs.descriptionOriginal == rhs.descriptionOriginal &&
+        lhs.id == rhs.id &&
+        lhs.image == rhs.image &&
+        lhs.listennotesURL == rhs.listennotesURL &&
+        lhs.thumbnail == rhs.thumbnail &&
+        lhs.titleOriginal == rhs.titleOriginal
+    }
+}

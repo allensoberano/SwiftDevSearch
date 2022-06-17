@@ -76,7 +76,7 @@ extension RootViewController: ViewContainer {
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: configureLayout())
         view.addSubview(collectionView)
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        collectionView.backgroundColor = .systemBackground
+        collectionView.backgroundColor = .white
         collectionView.delegate = self
         collectionView.register(
             RootViewCollectionViewCell.self,

@@ -8,6 +8,7 @@
 import Foundation
 
 struct Job: Codable {
+
     let company: Company
     let description: String
     let jobTitle: String
@@ -28,5 +29,16 @@ struct Company: Codable {
 
     enum CodingKeys: String, CodingKey {
         case companyName = "name"
+    }
+}
+
+extension Job: Equatable {
+    static func == (lhs: Job, rhs: Job) -> Bool {
+        return
+            lhs.company.companyName == rhs.company.companyName &&
+            lhs.description == rhs.description &&
+            lhs.jobTitle == rhs.jobTitle &&
+            lhs.id == rhs.id &&
+            lhs.postDate == rhs.postDate
     }
 }

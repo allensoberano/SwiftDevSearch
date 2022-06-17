@@ -10,6 +10,6 @@ import Foundation
 extension Client: ListenPodcastService {
 
     func getPodcasts(completion: @escaping (Result<PodcastResponse, Error>) -> Void) {
-        requestPodcasts(target: .podcasts, completion: completion)
+        requestPodcasts(completion: completion)
     }
 }
