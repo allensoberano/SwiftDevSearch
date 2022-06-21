@@ -14,7 +14,7 @@ final class Client {
     private lazy var middlewareMuseJobProvider: MoyaProvider<MuseJobTarget> = {
         var plugins = verbosePlugin()
 
-        return MoyaProvider<MuseJobTarget>(plugins: plugins)
+        return MoyaProvider<MuseJobTarget>(plugins: verbosePlugin())
     }()
 
     private let provider: MoyaProvider<MultiTarget>
@@ -40,6 +40,21 @@ final class Client {
 
     func requestPodcasts<T: Decodable>(completion: @escaping (Result<T, Error>) -> Void) {
         provider.request(MultiTarget(ListenPodcastsTarget.podcasts)) { result in
+            switch result {
+            case .success(let response):
+                do {
+                    if let results = try? JSONDecoder().decode(T.self, from: response.data) {
+                        completion(.success(results))
+                    }
+                }
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    func requestImages<T: Decodable>(completion: @escaping (Result<T, Error>) -> Void) {
+        provider.request(MultiTarget(UnsplashImageTarget.remoteWorkImages)) { result in
             switch result {
             case .success(let response):
                 do {
